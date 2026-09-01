@@ -30,7 +30,7 @@ jobs:
 
       - name: ✨ Gemini APIでふんわり予報を生成しMarkdownに保存
         run: |
-          node .github/scripts/generate-quote.js # スクリプト名は変更しない前提
+          node scripts/generate-quote.js # 実在するスクリプトを実行
 
       - name: ✅ Gitへコミット＆プッシュ
         run: |
