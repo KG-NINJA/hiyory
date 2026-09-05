@@ -5,8 +5,10 @@ permissions:
 name: Daily Funwari Forecast Blog # 名前を「ふんわり予報ブログ」に変更
 
 on:
-  schedule:
-    - cron: '0 2 * * *'  # 日本時間11:00（UTCで指定）に実行
+  # FROZEN 2026-09-05: scheduled execution paused by owner request.
+  # Do not restore scheduling or dispatch manually without explicit approval.
+  # schedule:
+  #   - cron: '0 2 * * *'  # 日本時間11:00（UTCで指定）に実行
   workflow_dispatch:     # 手動実行も可能にする
 
 jobs:
